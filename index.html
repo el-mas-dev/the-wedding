@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Undangan Pernikahan Bagas & Anisa</title>
+  
+  <!-- OpenGraph meta untuk preview link WhatsApp / sosmed -->
+  <meta property="og:title" content="Undangan Pernikahan Bagas & Anisa">
+  <meta property="og:description" content="Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri hari bahagia pernikahan kami.">
+  <meta property="og:image" content="assets/images/foto_laki_square.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon dikosongkan -->
+  <link rel="icon" href="data:,">
+
+  <!-- Google Fonts: Playfair Display, Great Vibes, Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Library animasi scroll AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+  <!-- Cover / Layar pembuka undangan -->
+  <div id="cover">
+    <div class="cover-content text-center" data-aos="zoom-in">
+      <p class="text-uppercase tracking-wider mb-2" style="letter-spacing: 3px; font-size: 0.9rem;">
+        The Wedding of
+      </p>
+      <h1 class="font-script display-3 mb-3 text-warning">Bagas & Anisa</h1>
+      <p class="text-white-50 mb-4">Minggu, 12 Desember 2026</p>
+
+      <!-- Kotak nama tamu (diisi lewat parameter URL ?to=Nama) -->
+      <div class="guest-box">
+        <p class="mb-1 text-white-50 small">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+        <div class="guest-name guest-name-text">Tamu Undangan</div>
+        <small class="text-white-50 fst-italic">*Mohon maaf bila ada kesalahan penulisan nama/gelar</small>
+      </div>
+
+      <!-- Tombol buka undangan -->
+      <button id="btn-open-invitation" class="btn btn-gold btn-lg mt-3">
+        <i class="bi bi-envelope-open-heart me-2"></i> Buka Undangan
+      </button>
+    </div>
+  </div>
+
+  <!-- Tombol kontrol musik melayang -->
+  <div id="audio-control" class="audio-control" title="Putar / Jeda Musik">
+    <i id="audio-icon" class="bi bi-play-fill fs-4"></i>
+  </div>
+  <audio id="bg-music" loop preload="auto">
+    <!-- Lagu pernikahan lokal -->
+    <source src="assets/audio/Wana Maak (lirik Arab &amp; terjemahan) ~Mohammed Alsahli.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Navbar dock bawah untuk HP & Desktop -->
+  <nav class="bottom-nav">
+    <a href="#hero" title="Home"><i class="bi bi-house-door"></i></a>
+    <a href="#couple" title="Mempelai"><i class="bi bi-heart"></i></a>
+    <a href="#event" title="Acara"><i class="bi bi-calendar-event"></i></a>
+    <a href="#gallery" title="Galeri"><i class="bi bi-images"></i></a>
+    <a href="#rsvp" title="Ucapan"><i class="bi bi-chat-quote"></i></a>
+    <a href="#gift" title="Hadiah"><i class="bi bi-gift"></i></a>
+  </nav>
+
+  <!-- Bagian Hero & Kutipan Ayat -->
+  <section id="hero" class="text-center d-flex align-items-center justify-content-center min-vh-100" style="background: linear-gradient(rgba(245, 249, 246, 0.88), rgba(245, 249, 246, 0.88)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80') center/cover fixed;">
+    <div class="container py-5">
+      <div data-aos="fade-down">
+        <p class="text-uppercase text-muted" style="letter-spacing: 4px;">Walimatul 'Ursy</p>
+        <h1 class="font-script display-2 text-warning mb-3">Bagas & Anisa</h1>
+        <p class="lead text-secondary mb-4">Minggu, 12 Desember 2026 • Surabaya, Jawa Timur</p>
+      </div>
+
+      <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm p-4 bg-white rounded-4">
+            <i class="bi bi-quote fs-1 text-warning mb-2"></i>
+            <p class="fst-italic text-secondary mb-2" style="font-size: 0.95rem;">
+              "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+            </p>
+            <small class="fw-bold text-dark">— QS. Ar-Rum: 21 —</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil Mempelai Pria & Wanita -->
+  <section id="couple" class="py-5">
+    <div class="container text-center">
+      <div data-aos="fade-up">
+        <h3 class="section-subtitle">Kedua Mempelai</h3>
+        <h2 class="section-title">Assalamu’alaikum Warahmatullahi Wabarakatuh</h2>
+        <p class="text-muted mx-auto col-md-8 mb-5">
+          Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Dengan memohon rahmat dan ridho-Nya, kami bermaksud menyelenggarakan pernikahan kami:
+        </p>
+      </div>
+
+      <div class="row justify-content-center align-items-center g-4">
+        <!-- Mempelai Pria -->
+        <div class="col-md-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="couple-card">
+            <div class="couple-img-wrapper">
+              <img src="assets/images/foto_laki_square.jpg" alt="Mempelai Pria" class="couple-img groom">
+            </div>
+            <h3 class="font-heading fs-4 fw-bold mb-1">Bagas Pratama, S.Kom.</h3>
+            <p class="text-muted small mb-2">Putra pertama dari pasangan</p>
+            <p class="fw-medium text-secondary mb-3">Bpk. H. Bambang Susanto & Ibu Hj. Siti Aminah</p>
+            <a href="https://instagram.com" target="_blank" class="btn btn-sm btn-outline-gold">
+              <i class="bi bi-instagram me-1"></i> @bagaspratama
+            </a>
+          </div>
+        </div>
+
+        <!-- Simbol & -->
+        <div class="col-md-2 my-3 my-md-0" data-aos="zoom-in" data-aos-delay="300">
+          <span class="font-script display-3 text-warning">&</span>
+        </div>
+
+        <!-- Mempelai Wanita -->
+        <div class="col-md-5" data-aos="fade-left" data-aos-delay="400">
+          <div class="couple-card">
+            <div class="couple-img-wrapper">
+              <img src="assets/images/foto_perempuan_square.jpg" alt="Mempelai Wanita" class="couple-img bride">
+            </div>
+            <h3 class="font-heading fs-4 fw-bold mb-1">Anisa Rahmadani, S.Ds.</h3>
+            <p class="text-muted small mb-2">Putri kedua dari pasangan</p>
+            <p class="fw-medium text-secondary mb-3">Bpk. Ir. Joko Widodo & Ibu Ratna Kusuma</p>
+            <a href="https://instagram.com" target="_blank" class="btn btn-sm btn-outline-gold">
+              <i class="bi bi-instagram me-1"></i> @anisarahma
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waktu, Countdown & Lokasi Acara -->
+  <section id="event" class="py-5 bg-white">
+    <div class="container text-center">
+      <div data-aos="fade-up">
+        <h3 class="section-subtitle">Waktu & Tempat</h3>
+        <h2 class="section-title">Menghitung Hari Menuju Hari Bahagia</h2>
+        <p class="text-muted mb-4">Insya Allah acara pernikahan kami akan diselenggarakan pada:</p>
+      </div>
+
+      <!-- Kotak Countdown -->
+      <div class="countdown-box" data-aos="zoom-in" data-aos-delay="200">
+        <div class="timer-item">
+          <span id="days">00</span>
+          <label>Hari</label>
+        </div>
+        <div class="timer-item">
+          <span id="hours">00</span>
+          <label>Jam</label>
+        </div>
+        <div class="timer-item">
+          <span id="minutes">00</span>
+          <label>Menit</label>
+        </div>
+        <div class="timer-item">
+          <span id="seconds">00</span>
+          <label>Detik</label>
+        </div>
+      </div>
+
+      <!-- Jadwal Akad & Resepsi -->
+      <div class="row justify-content-center g-4 mt-2">
+        <!-- Akad Nikah -->
+        <div class="col-md-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="event-card h-100">
+            <i class="bi bi-gem text-warning fs-1 mb-2"></i>
+            <h4 class="font-heading fw-bold mb-3">Akad Nikah</h4>
+            <hr class="w-25 mx-auto my-3 text-warning">
+            <p class="mb-1"><i class="bi bi-calendar3 me-2 text-warning"></i>Minggu, 12 Desember 2026</p>
+            <p class="mb-3"><i class="bi bi-clock me-2 text-warning"></i>08.00 - 10.00 WIB</p>
+            <p class="fw-bold mb-1"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Masjid Agung Al-Akbar</p>
+            <p class="text-muted small mb-4">Jl. Masjid Agung Timur No.1, Pagesangan, Kec. Jambangan, Surabaya</p>
+            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-gold btn-sm">
+              <i class="bi bi-geo-alt me-1"></i> Buka Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Resepsi Pernikahan -->
+        <div class="col-md-5" data-aos="fade-up" data-aos-delay="400">
+          <div class="event-card h-100">
+            <i class="bi bi-heart-fill text-warning fs-1 mb-2"></i>
+            <h4 class="font-heading fw-bold mb-3">Resepsi Pernikahan</h4>
+            <hr class="w-25 mx-auto my-3 text-warning">
+            <p class="mb-1"><i class="bi bi-calendar3 me-2 text-warning"></i>Minggu, 12 Desember 2026</p>
+            <p class="mb-3"><i class="bi bi-clock me-2 text-warning"></i>11.00 - 14.00 WIB</p>
+            <p class="fw-bold mb-1"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Grand City Ballroom</p>
+            <p class="text-muted small mb-4">Jl. Walikota Mustajab No.1, Ketabang, Kec. Genteng, Surabaya</p>
+            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-gold btn-sm">
+              <i class="bi bi-geo-alt me-1"></i> Buka Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Foto Prewedding -->
+  <section id="gallery" class="py-5">
+    <div class="container text-center">
+      <div data-aos="fade-up">
+        <h3 class="section-subtitle">Momen Berharga</h3>
+        <h2 class="section-title">Galeri Foto Bahagia</h2>
+        <p class="text-muted mb-5">Potret kenangan manis perjalanan cinta kedua mempelai</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Galeri 1">
+          </div>
+        </div>
+        <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80" alt="Galeri 2">
+          </div>
+        </div>
+        <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Galeri 3">
+          </div>
+        </div>
+        <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80" alt="Galeri 4">
+          </div>
+        </div>
+        <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Galeri 5">
+          </div>
+        </div>
+        <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=600&q=80" alt="Galeri 6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hadiah Digital / Nomor Rekening -->
+  <section id="gift" class="py-5 bg-white">
+    <div class="container text-center">
+      <div data-aos="fade-up">
+        <h3 class="section-subtitle">Tanda Kasih</h3>
+        <h2 class="section-title">Amplop Digital & Wedding Gift</h2>
+        <p class="text-muted col-md-8 mx-auto mb-5">
+          Doa restu Anda merupakan karunia terindah bagi kami. Namun jika Anda bermaksud memberi tanda kasih secara digital, dapat melalui rekening berikut:
+        </p>
+      </div>
+
+      <div class="row justify-content-center g-4">
+        <!-- Rekening BCA -->
+        <div class="col-md-5" data-aos="flip-left" data-aos-delay="200">
+          <div class="bank-card text-start">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="fw-bold fs-5 text-warning">BANK BCA</span>
+              <i class="bi bi-credit-card-2-front fs-3"></i>
+            </div>
+            <p class="mb-1 text-white-50 small">Nomor Rekening:</p>
+            <h4 class="fw-bold tracking-wider mb-2">1234 5678 90</h4>
+            <p class="text-white-50 mb-3">a.n. <strong>Bagas Pratama</strong></p>
+            <button class="btn btn-outline-light btn-sm" onclick="copyAccountNumber('1234567890', this)">
+              <i class="bi bi-copy me-1"></i> Salin Nomor Rekening
+            </button>
+          </div>
+        </div>
+
+        <!-- Rekening Mandiri -->
+        <div class="col-md-5" data-aos="flip-right" data-aos-delay="300">
+          <div class="bank-card text-start">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="fw-bold fs-5 text-warning">BANK MANDIRI</span>
+              <i class="bi bi-credit-card-2-front fs-3"></i>
+            </div>
+            <p class="mb-1 text-white-50 small">Nomor Rekening:</p>
+            <h4 class="fw-bold tracking-wider mb-2">9876 5432 10</h4>
+            <p class="text-white-50 mb-3">a.n. <strong>Anisa Rahmadani</strong></p>
+            <button class="btn btn-outline-light btn-sm" onclick="copyAccountNumber('9876543210', this)">
+              <i class="bi bi-copy me-1"></i> Salin Nomor Rekening
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Konfirmasi Kehadiran & Doa Tamu -->
+  <section id="rsvp" class="py-5">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h3 class="section-subtitle">Kehadiran & Doa</h3>
+        <h2 class="section-title">Konfirmasi RSVP & Buku Tamu</h2>
+        <p class="text-muted mb-5">Mohon konfirmasikan kehadiran dan sampaikan doa terbaik Anda</p>
+      </div>
+
+      <div class="row justify-content-center g-4">
+        <!-- Form RSVP -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="card border-0 shadow-sm p-4 rounded-4 bg-white">
+            <h4 class="fw-bold mb-3 font-heading text-warning">Form Konfirmasi Kehadiran</h4>
+            <form id="rsvp-form">
+              <div class="mb-3">
+                <label for="rsvp-name" class="form-label small fw-medium">Nama Lengkap</label>
+                <input type="text" class="form-control" id="rsvp-name" placeholder="Masukkan nama Anda" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="rsvp-status" class="form-label small fw-medium">Konfirmasi Kehadiran</label>
+                <select class="form-select" id="rsvp-status" required>
+                  <option value="" disabled selected>Pilih status kehadiran...</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir (Berhalangan)</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="rsvp-message" class="form-label small fw-medium">Ucapan & Doa Restu</label>
+                <textarea class="form-control" id="rsvp-message" rows="4" placeholder="Tuliskan pesan atau doa restu..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold w-100">
+                <i class="bi bi-send me-1"></i> Kirim Konfirmasi & Doa
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- List Ucapan -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <div class="card border-0 shadow-sm p-4 rounded-4 bg-white h-100">
+            <h4 class="fw-bold mb-3 font-heading text-warning">Ucapan & Doa dari Kerabat</h4>
+            <div id="wishes-list" class="wishes-container">
+              <!-- diisi otomatis lewat JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background: #0f271d; border-top: 3px solid #d4af37;">
+    <div class="container">
+      <h2 class="font-script display-3 text-warning mb-2" data-aos="fade-up">Bagas & Anisa</h2>
+      <p class="text-white-50 mb-4" data-aos="fade-up" data-aos-delay="100">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+      </p>
+      <p class="text-white-50 small mb-0">
+        © 2026 Bagas & Anisa. Dibuat untuk Ujian Tengah Semester Pemrograman Berbasis Platform.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
