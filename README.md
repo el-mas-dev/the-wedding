@@ -19,7 +19,7 @@ Aplikasi web undangan pernikahan digital interaktif, modern, dan responsif yang 
 | **NIM:** | 25051204385 |
 | **Mata Kuliah:** | Pemrograman Berbasis Platform (PBP) |
 | **Link Repository GitHub:** | [https://github.com/el-mas-dev/the-wedding](https://github.com/el-mas-dev/the-wedding) |
-| **Link Undangan (Live Website):** | [[https://el-mas-dev.github.io/the-wedding/](https://el-mas-dev.github.io/the-wedding/)](https://the-wedding-kappa.vercel.app/) |
+| **Link Undangan (Live Website):** | https://the-wedding-kappa.vercel.app/ |
 | **Link Video Penjelasan (On-Cam):** | [https://youtu.be/link-video-15-menit](https://youtube.com/) |
 
 ---
