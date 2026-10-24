@@ -15,8 +15,8 @@ Aplikasi web undangan pernikahan digital interaktif, modern, dan responsif yang 
 
 | Data Pengumpulan | Keterangan / Tautan |
 |---|---|
-| **Nama Lengkap:** | [Isi Nama Lengkap Anda] |
-| **NIM:** | [Isi NIM Anda] |
+| **Nama Lengkap:** | Ahmad Syaifulloh |
+| **NIM:** | 25051204385 |
 | **Mata Kuliah:** | Pemrograman Berbasis Platform (PBP) |
 | **Link Repository GitHub:** | [https://github.com/el-mas-dev/the-wedding](https://github.com/el-mas-dev/the-wedding) |
 | **Link Undangan (Live Website):** | [https://el-mas-dev.github.io/the-wedding/](https://el-mas-dev.github.io/the-wedding/) |
