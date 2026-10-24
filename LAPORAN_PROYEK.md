@@ -10,7 +10,7 @@
 - **Nama:** [Isi Nama Lengkap Anda di Sini]
 - **NIM:** [Isi NIM Anda di Sini]
 - **Link Github:** https://github.com/el-mas-dev/the-wedding
-- **Link Undangan:** https://el-mas-dev.github.io/the-wedding/
+- **Link Undangan:** https://the-wedding-el-mas-dev.vercel.app/
 - **Link Penjelasan (oncam):** https://youtu.be/[link-video-presentasi-15-menit]
 
 ---
@@ -98,21 +98,13 @@ Proyek ini mengadopsi framework Bootstrap 5.3 CDN resmi untuk memastikan perform
 
 ---
 
-### V. PANDUAN DEPLOYMENT GITHUB PAGES
-1. Inisialisasi Git dan simpan commit:
-   ```bash
-   git init -b main
-   git add .
-   git commit -m "feat: complete digital wedding invitation UTS PBP"
-   ```
-2. Buat repository baru di GitHub (misal: `undangan-digital-uts`).
-3. Hubungkan ke repositori jarak jauh (remote):
-   ```bash
-   git remote add origin https://github.com/[username-anda]/[nama-repo].git
-   git push -u origin main
-   ```
-4. Buka GitHub -> Menu **Settings** -> Tab **Pages** -> Pada **Build and deployment**, pilih Branch: `main` / `root` -> Klik **Save**.
-5. Tautan publik Anda akan aktif di format: `https://[username-anda].github.io/[nama-repo]/`.
+### V. PANDUAN DEPLOYMENT VERCEL
+1. Buka [https://vercel.com](https://vercel.com) dan login menggunakan akun GitHub (`el-mas-dev`).
+2. Klik tombol **"Add New..."** > pilih **"Project"**.
+3. Cari repository **`the-wedding`** (`el-mas-dev/the-wedding`), lalu klik **"Import"**.
+4. Pada Framework Preset pilih **Other**, root directory tetap `./`.
+5. Klik **"Deploy"**. Dalam hitungan detik website telah aktif di alamat: `https://the-wedding-el-mas-dev.vercel.app/`
+Setiap `git push` ke repositori akan otomatis diperbarui secara realtime oleh Vercel.
 
 ---
 

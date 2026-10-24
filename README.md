@@ -5,7 +5,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap 5](https://img.shields.io/badge/Bootstrap_5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 Aplikasi web undangan pernikahan digital interaktif, modern, dan responsif yang dibangun menggunakan **HTML5 Semantik, CSS3 Custom Theme, Framework Bootstrap 5.3, dan Vanilla JavaScript (ES6+)**. Mengusung harmoni kemewahan islami bernuansa **Hijau Emerald, Kuning Emas, dan Putih Bersih (*Green, Gold & White*)**.
 
@@ -19,7 +19,7 @@ Aplikasi web undangan pernikahan digital interaktif, modern, dan responsif yang 
 | **NIM:** | 25051204385 |
 | **Mata Kuliah:** | Pemrograman Berbasis Platform (PBP) |
 | **Link Repository GitHub:** | [https://github.com/el-mas-dev/the-wedding](https://github.com/el-mas-dev/the-wedding) |
-| **Link Undangan (Live Website):** | https://the-wedding-kappa.vercel.app/ |
+| **Link Undangan (Live Website - Vercel):** | [https://the-wedding-kappa.vercel.app/](https://the-wedding-kappa.vercel.app/) |
 | **Link Video Penjelasan (On-Cam):** | [https://youtu.be/link-video-15-menit](https://youtube.com/) |
 
 ---
@@ -157,27 +157,29 @@ Ujian_tengah_semester_PBP/
 
 ---
 
-## 🌐 Panduan Publikasi ke GitHub Pages (Hosting Gratis)
+## 🌐 Panduan Publikasi / Deployment ke Vercel (Hosting Cepat & Gratis)
 
-1. Inisialisasi Git dan simpan seluruh perubahan:
-   ```bash
-   git init -b main
-   git add .
-   git commit -m "feat: complete digital wedding invitation UTS PBP"
-   ```
-2. Hubungkan ke repositori GitHub:
-   ```bash
-   git remote add origin https://github.com/el-mas-dev/the-wedding.git
-   git push -u origin main
-   ```
-3. Buka GitHub melalui browser:
-   - Masuk ke tab **Settings** -> Pilih menu **Pages** di sebelah kiri.
-   - Pada bagian **Build and deployment**, atur Branch ke **`main`** dan direktori **`/ (root)`**.
-   - Klik tombol **Save**.
-4. Website undangan Anda akan aktif dan dapat diakses publik pada alamat:
+Proyek ini telah di-deploy secara otomatis menggunakan **Vercel** yang terhubung langsung dengan repositori GitHub:
+
+1. **Masuk ke Vercel:**  
+   Buka [https://vercel.com](https://vercel.com) dan login menggunakan akun GitHub Anda (**el-mas-dev**).
+2. **Impor Repository:**  
+   - Klik tombol **"Add New..."** pada dashboard Vercel, lalu pilih **"Project"**.
+   - Cari dan pilih repository **`the-wedding`** (`el-mas-dev/the-wedding`), lalu klik tombol **"Import"**.
+3. **Konfigurasi Project:**  
+   - **Project Name:** `the-wedding` (atau disesuaikan dengan kebutuhan Anda).
+   - **Framework Preset:** Pilih **Other** (karena dibangun menggunakan HTML5, CSS3, dan Vanilla JS).
+   - **Root Directory:** `./` (default).
+   - **Build and Output Settings:** Biarkan default (tidak perlu diubah).
+4. **Deploy:**  
+   - Klik tombol **"Deploy"**.
+   - Tunggu proses deployment selesai sekitar 10–20 detik.
+5. **Website Aktif & Auto-Deploy:**  
+   Undangan digital Anda langsung aktif secara global dengan domain instan cepat dan SSL/HTTPS otomatis:  
    ```text
-   https://el-mas-dev.github.io/the-wedding/
+   https://the-wedding-kappa.vercel.app/
    ```
+   *(Setiap kali Anda menjalankan `git push` ke repository GitHub, Vercel akan secara otomatis memperbarui website secara realtime).*
 
 ---
 
@@ -189,7 +191,7 @@ Ujian_tengah_semester_PBP/
 | 2 | **Undangan Pernikahan Digital** | Menyediakan seluruh komponen undangan esensial: Cover, Profil, Akad/Resepsi, Hitung Mundur, Galeri, Amplop Digital, dan Buku Tamu. |
 | 3 | **Kreatifitas & Tampilan** | Desain bertema *Green, Gold & White*, animasi rotasi vinyl, Glassmorphism, integrasi URL personalizer, dan 100% responsif mobile-friendly. |
 | 4 | **Source Code Higienis** | Kode bersih, terstruktur modular, terdokumentasi dengan komentar developer murni, dan bebas dari baris divider berulang. |
-| 5 | **Kelengkapan Pengumpulan** | Repositori GitHub terstruktur, dokumentasi galeri visual lengkap, siap deploy ke GitHub Pages, serta panduan rekaman presentasi video on-cam 15 menit. |
+| 5 | **Kelengkapan Pengumpulan** | Repositori GitHub terstruktur, dokumentasi galeri visual lengkap, siap deploy ke Vercel & GitHub, serta panduan rekaman presentasi video on-cam 15 menit. |
 
 ---
 
