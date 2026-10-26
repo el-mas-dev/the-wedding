@@ -94,7 +94,7 @@ if (audioControl) {
 }
 
 // target tanggal acara pernikahan
-const weddingDate = new Date('2026-18-12T09:00:00').getTime();
+const weddingDate = new Date('2026-12-18T09:00:00').getTime();
 
 const timerDays = document.getElementById('days');
 const timerHours = document.getElementById('hours');
